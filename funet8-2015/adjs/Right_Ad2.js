@@ -1,0 +1,1 @@
+//document.writeln('<script>var qj_uid="700204";var qj_tid="23";var qj_w="360";var qj_h="300";</script><script charset="utf-8" src="//c8.wangdq.com/js/cpc_i.js"></script>');

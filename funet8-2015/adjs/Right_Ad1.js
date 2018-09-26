@@ -1,0 +1,2 @@
+document.writeln("<script type=\'text/javascript\'>var sogou_ad_id=525064;var sogou_ad_height=300;var sogou_ad_width=360;</script>");
+document.writeln("<script type=\'text/javascript\' src=\'https://images.sohu.com/cs/jsfile/js/c.js\'></script>");
