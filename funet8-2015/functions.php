@@ -272,19 +272,6 @@ $posttags = get_the_tags();
 //解决WordPress半角引号变全角问题
 remove_filter('the_content', 'wptexturize');
 
-// 更新文章时自动刷新首页缓存 redis-20170826
-function newPostRefresh() {
-        $temp=file_get_contents("http://www.funet8.com/?r=y");//网址换成自己的
-}
-add_action('publish_post', 'newPostRefresh');
-add_action('edit_post', 'newPostRefresh');
-add_action('delete_post', 'newPostRefresh');
-add_action('comment_post', 'newPostRefresh');
-add_action('edit_comment', 'newPostRefresh');
-add_action('delete_comment', 'newPostRefresh');
-add_action('wp_set_comment_status', 'newPostRefresh');
-add_action('switch_theme', 'newPostRefresh');
-
 //图片改成https
 function replacehttp($content){
 		if( is_ssl() ){
